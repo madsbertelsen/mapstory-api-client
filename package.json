@@ -1,0 +1,35 @@
+{
+  "name": "mapstory-api-client",
+  "version": "0..1",
+  "main": "dist/index.js",
+  "module": "dist/index.m.js",
+  "umd:main": "dist/index.umd.js",
+  "source": "src/index.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/madsbertelsen/mapstory-api-client.git"
+  },
+  "scripts": {
+    "build": "rm -rf dist && microbundle  --tsconfig tsconfig.json",
+    "dev": "microbundle watch --tsconfig tsconfig.json",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@types/jest": "^25.2.1",
+    "jest": "^25.4.0",
+    "microbundle": "0.13.0",
+    "nock": "^12.0.3"
+  },
+  "keywords": [
+  ],
+  "author": "Mads Bertelsen <bertelsenschmidt@gmail.com>",
+  "license": "MIT",
+  "files": [
+    "src",
+    "dist"
+  ],
+  "dependencies": {
+    "isomorphic-unfetch": "3.1.0",
+    "querystringify": "2.2.0"
+  }
+}
